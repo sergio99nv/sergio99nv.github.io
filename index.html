@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, porro ab ullam perferendis modi maiores minima similique impedit eum, ad recusandae aliquam, eveniet tenetur. Minus dolores incidunt itaque quia repudiandae.</h1>
+
+
+    <button id="btnShare">Share</button>
+
+
+    <script>
+
+        const btnShare = document.querySelector('#btnShare');
+
+        btnShare.addEventListener('click', ()=>{
+
+
+
+            navigator.share({
+                url:document.location.href
+            })
+        })
+
+    </script>
+
+</body>
+</html>
