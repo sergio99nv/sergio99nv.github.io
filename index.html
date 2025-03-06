@@ -1,63 +1,35 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     
-  <!-- HTML Meta Tags -->
-  <title>cats with cats 3</title>
-  <meta name="description" content="cats with cats are funny 44">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-  <!-- Facebook Meta Tags -->
-   
-  <meta property="og:title" content="cats with cats 44">
-  <meta property="og:description" content="cats with cats are funny 44">
- 
-  <!-- Twitter Meta Tags -->
-  <!-- Meta Tags Generated via https://www.opengraph.xyz -->
-        
+    <link rel="manifest" href="https://testing2.edubox.app/core_app/index.php/Pwa_ctrl/getManifestAbc?start_url=http://localhost:5500/index.html?x=1">
 </head>
 <body>
+    abc
 
-    <style>
-        img{
-            max-width: 100%;
-        }
+ss
+    xx2
 
-        button{
-            padding: 1rem;
-            background-color: greenyellow;
-        }
-    </style>
-    
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis praesentium expedita maiores repudiandae voluptatum similique repellat sint voluptates nemo. Ad, eveniet autem dolor iusto recusandae necessitatibus pariatur eum quasi voluptates.
 
-    <button id="btnShare">Share</button>
-    <h1 style="color:tomato;">cats with cats</h1>
-    <p>
-        cats with cats are funny 44
-    </p>
-
-    <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est incidunt reiciendis facilis tenetur eaque eum! Rerum harum velit quam eum. Doloremque eaque quae consequuntur? Excepturi magnam debitis ducimus deleniti eum.
-    </p>
-
-    <img src="https://images.pexels.com/photos/5667027/pexels-photo-5667027.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-
- 
-
-    <script>
-
-        const btnShare = document.querySelector('#btnShare');
-
-        btnShare.addEventListener('click', ()=>{
-
-
-
-            navigator.share({
-                title: 'cats with cats are funny 44',
-                url:document.location.href,
-            })
-        })
-
-    </script>
-
+<script>
+    // registrar service worker
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/sw.js')
+                .then(reg => {
+                    console.log('Service Worker registrado.');
+                })
+                .catch(err => {
+                    console.error('Error al registrar el Service Worker: ', err);
+                });
+        });
+    }
+</script>
 </body>
 </html>
