@@ -10,22 +10,21 @@
     <link rel="manifest" href="https://testing2.edubox.app/core_app/index.php/Pwa_ctrl/getManifest?start_url=https://sergio99nv.github.io/">
 </head>
 <body>
-    abc
+    abc test
 666
     
     <script>
-    // registrar service worker
-    if ('serviceWorker' in navigator) {
+    
         window.addEventListener('load', () => {
             navigator.serviceWorker.register('/sw.js')
                 .then(reg => {
                     console.log('Service Worker registrado.');
                 })
                 .catch(err => {
-                    console.error('Error al registrar el Service Worker: ', err);
+                    alert('Error al registrar el Service Worker: ', err);
                 });
         });
-    }
+    
 
 
      
