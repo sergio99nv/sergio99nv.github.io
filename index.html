@@ -30,6 +30,17 @@ ss
                 });
         });
     }
+
+
+       window.addEventListener('beforeinstallprompt', (e) => {
+        e.preventDefault();
+        setTimeout(() => {
+            e.prompt();
+
+            
+        }, 15 *1000);
+        
+    });
 </script>
 </body>
 </html>
