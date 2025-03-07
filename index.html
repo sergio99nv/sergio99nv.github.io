@@ -32,20 +32,7 @@
 
 
 
-            window.addEventListener('beforeinstallprompt', (e) => {
-  // Prevent the mini-infobar from appearing on mobile
-  e.preventDefault();
-  // Stash the event so it can be triggered later.
-  let deferredPrompt = e;
-  // Update UI notify the user they can install the PWA
-  alert(33);
-
-
-    
-
-                setTimeout(() => {
-  deferredPrompt.prompt();
-}, 6000);
+          
 
 });
         
