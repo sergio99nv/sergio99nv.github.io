@@ -1,1 +1,4 @@
-self.addEventListener('fetch', function(event) {})
+self.addEventListener('activate', () => {
+  console.log('sw activate');
+  clients.claim();
+});
